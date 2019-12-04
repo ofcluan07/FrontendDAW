@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
 import { 
-    Table, 
-    Button,
-    Form,
-    FormGroup,
-    Label,
-    Input,
     Alert
 } from 'reactstrap';
 import api from '../../services/api';
 import FormProduct from '../FormProduct'
+import ListProduct from '../ListProduct'
 
 export default class ProductBox extends Component {
 
-    Url = 'http://localhost:9000/products';
+    Url = 'https://backenddaw.herokuapp.com/api';
 
     state = {
         products: [],
