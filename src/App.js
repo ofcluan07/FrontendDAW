@@ -1,12 +1,18 @@
-import React, {Component} from 'react';
-import Main from './pages/main'
-class App extends Component {
-  render(){
+import React from 'react';
+
+import Jumbotron from './components/navbar';
+
+import Home from './pages/Home';
+
+const App = () => {
+
     return (
-      <div className="App">
-        <Main/>
-      </div>
-    );
-  }
-}
+        <div>
+            <Jumbotron />
+
+            <Home />
+        </div>
+    )
+};
+
 export default App;
